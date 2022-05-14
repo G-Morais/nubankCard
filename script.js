@@ -27,6 +27,7 @@ function voltarCartao(event){
 }
 
 function cardTransition(){
+    clearInterval(car.transitionId)
     card.style.cardTransition = 'transform 600ms'
     setTimeout(() =>{
         card.style.transition = '';
